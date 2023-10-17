@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  api:
+    build: 
+      context: $PWD/api/
+      dockerfile: $PWD/api/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
